@@ -1,0 +1,228 @@
+/* inicial boot*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1f7a5c;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+/* Estilos de la hoja de vida */
+
+.pagina-hv {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pagina-hv h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.pagina-hv h2 {
+  margin-bottom: 10px;
+  color: #1f7a5c;
+}
+
+.pagina-hv p {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.pagina-hv img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+.pagina-hv section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.pagina-hv ol {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.pagina-hv li {
+  margin-bottom: 6px;
+}
+
+/* Estilos de los Servicios que se ofrecen */
+
+.pagina-servicios {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.pagina-servicios h1,
+.pagina-servicios h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.pagina-servicios .servicio {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.pagina-servicios .servicio__media,
+.pagina-servicios .servicio__contenido {
+  width: 50%;
+}
+
+.pagina-servicios .servicio__media img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.pagina-servicios .servicio h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.pagina-servicios .servicio p {
+  text-align: justify;
+  font-style: italic;
+}
+
+/* Sitios Turisticos
+Aqui no va nada, se me rompe si pongo estilos. */
+
+.contenedor-sitio {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.contenedor-texto {
+  max-width: 400px;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.contenedor-texto p {
+  margin-bottom: 1rem;
+}
+
+/* Estilos del Index principal real no fake */
+
+.pagina-index {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagina-index header {
+  height: 10vh;
+  background-color: #73cf66;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 2px solid black;
+  margin: 1vh;
+  border-radius: 1vh;
+}
+
+.pagina-index main {
+  flex: 1;
+  display: flex;
+  height: 75vh;
+  padding: 1vh;
+  gap: 1vw;
+}
+
+.pagina-index .central {
+  width: 75vw;
+  border: 2px solid red;
+  height: 100%;
+}
+
+.pagina-index .central iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pagina-index .navegacion {
+  width: 20vw;
+  border: 2px solid green;
+  padding: 2vh 1vw;
+}
+
+.pagina-index nav ul {
+  list-style: none;
+}
+
+.pagina-index nav ul li {
+  margin-bottom: 2vh;
+}
+
+.pagina-index nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.pagina-index nav a:hover {
+  text-decoration: underline;
+}
+
+.pagina-index footer {
+  height: 5vh;
+  background-color: #a83939;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .pagina-index main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .pagina-index .central,
+  .pagina-index .navegacion {
+    width: 100%;
+    height: 50vh;
+  }
+}

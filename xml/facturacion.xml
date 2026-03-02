@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<facturacion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+
+  <factura>
+    <codigo>001</codigo>
+    <fecha>2025-01-15</fecha>
+    <cliente>
+      <nombre>Empresa A</nombre>
+      <nit>900123456-1</nit>
+      <direccion>Bogotá, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Evaluación Proyecto Conservación BCR002</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pagada</estado>
+    <mes>Enero</mes>
+  </factura>
+
+  <factura>
+    <codigo>002</codigo>
+    <fecha>2025-02-12</fecha>
+    <cliente>
+      <nombre>Empresa B</nombre>
+      <nit>901987654-2</nit>
+      <direccion>Medellín, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Restauración bajo estándar M001</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pendiente</estado>
+    <mes>Febrero</mes>
+  </factura>
+
+  <factura>
+    <codigo>003</codigo>
+    <fecha>2025-03-08</fecha>
+    <cliente>
+      <nombre>Empresa C</nombre>
+      <nit>900456321-3</nit>
+      <direccion>Cali, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Manejo Forestal Mejorado BCR0010</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pagada</estado>
+    <mes>Marzo</mes>
+  </factura>
+
+  <factura>
+    <codigo>004</codigo>
+    <fecha>2025-04-14</fecha>
+    <cliente>
+      <nombre>Empresa D</nombre>
+      <nit>901222333-4</nit>
+      <direccion>Barranquilla, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Auditoría de Proyectos Ambientales</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pendiente</estado>
+    <mes>Abril</mes>
+  </factura>
+
+  <factura>
+    <codigo>005</codigo>
+    <fecha>2025-05-20</fecha>
+    <cliente>
+      <nombre>Empresa E</nombre>
+      <nit>900999888-5</nit>
+      <direccion>Bucaramanga, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Monitoreo Ambiental Integral</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pagada</estado>
+    <mes>Mayo</mes>
+  </factura>
+
+  <factura>
+    <codigo>006</codigo>
+    <fecha>2025-06-18</fecha>
+    <cliente>
+      <nombre>Empresa F</nombre>
+      <nit>900111222-6</nit>
+      <direccion>Cartagena, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Validación Técnica Proyecto REDD+</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pendiente</estado>
+    <mes>Junio</mes>
+  </factura>
+
+  <factura>
+    <codigo>007</codigo>
+    <fecha>2025-07-11</fecha>
+    <cliente>
+      <nombre>Empresa G</nombre>
+      <nit>900333444-7</nit>
+      <direccion>Pereira, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Consultoría en Estándares de Carbono</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pagada</estado>
+    <mes>Julio</mes>
+  </factura>
+
+  <factura>
+    <codigo>008</codigo>
+    <fecha>2025-08-09</fecha>
+    <cliente>
+      <nombre>Empresa H</nombre>
+      <nit>900555666-8</nit>
+      <direccion>Manizales, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Revisión Documental Proyecto Ambiental</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pendiente</estado>
+    <mes>Agosto</mes>
+  </factura>
+
+  <factura>
+    <codigo>009</codigo>
+    <fecha>2025-09-16</fecha>
+    <cliente>
+      <nombre>Empresa I</nombre>
+      <nit>900777888-9</nit>
+      <direccion>Villavicencio, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Supervisión de Restauración Ecológica</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pagada</estado>
+    <mes>Septiembre</mes>
+  </factura>
+
+  <factura>
+    <codigo>010</codigo>
+    <fecha>2025-10-22</fecha>
+    <cliente>
+      <nombre>Empresa J</nombre>
+      <nit>900888999-0</nit>
+      <direccion>Santa Marta, Colombia</direccion>
+    </cliente>
+    <servicios>
+      <servicio>
+        <descripcion>Certificación Proyecto de Conservación</descripcion>
+        <valor>5000</valor>
+      </servicio>
+    </servicios>
+    <subtotal>5000</subtotal>
+    <iva>950</iva>
+    <total>5950</total>
+    <estado>Pendiente</estado>
+    <mes>Octubre</mes>
+  </factura>
+
+</facturacion>

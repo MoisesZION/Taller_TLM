@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Tipo NIT: 9 dígitos + guion + 1 dígito -->
+  <xs:simpleType name="NitType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{9}-\d{1}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Tipo Código: exactamente 3 dígitos -->
+  <xs:simpleType name="CodigoType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="\d{3}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="facturacion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="factura" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codigo" type="CodigoType"/>
+              <xs:element name="fecha" type="xs:date"/>
+              <xs:element name="cliente">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="nombre" type="xs:string"/>
+                    <xs:element name="nit" type="NitType"/>
+                    <xs:element name="direccion" type="xs:string"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="servicios">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="servicio" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="descripcion" type="xs:string"/>
+                          <xs:element name="valor" type="xs:decimal"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="subtotal" type="xs:decimal"/>
+              <xs:element name="iva" type="xs:decimal"/>
+              <xs:element name="total" type="xs:decimal"/>
+              <xs:element name="estado" type="xs:string"/>
+              <xs:element name="mes" type="xs:string"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>

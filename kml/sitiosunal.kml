@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  
+<Folder>
+  <Placemark>
+    <name>Parque Metropolitano Simon Bolivar</name>
+    <description>Recreativo</description>
+    <Point>
+      <coordinates>-74.09457584524756,4.6563517319397,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Parque de los Novios</name>
+    <description>Recreativo</description>
+    <Point>
+      <coordinates>-74.08138231143369,4.654594608202036,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Estadio Nemesio Camacho El Campin</name>
+    <description>Deportivo</description>
+    <Point>
+      <coordinates>-74.07757283503327,4.645744083733322,0</coordinates>
+    </Point>
+  </Placemark>
+  
+  <Placemark>
+    <name>Observatorio Astronomico Nacional</name>
+    <description>Cientifico</description>
+    <Point>
+      <coordinates>-74.083544149254,4.639488949380409,0</coordinates>
+    </Point>
+  </Placemark>
+
+  <Placemark>
+    <name>Servicio Geologico Colombiano</name>
+    <description>Cientifico</description>
+    <Point>
+      <coordinates>-74.09229961141654,4.639869301713416,0</coordinates>
+    </Point>
+  </Placemark>  
+</Folder>  
+</kml>
