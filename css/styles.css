@@ -120,17 +120,53 @@ hr {
   font-style: italic;
 }
 
+@media (max-width: 600px) {
+  .pagina-servicios {
+    padding: 20px 15px;
+  }
+
+  .pagina-servicios .servicio {
+    flex-direction: column;
+  }
+
+  .pagina-servicios .servicio__media,
+  .pagina-servicios .servicio__contenido {
+    width: 100%;
+  }
+
+  .pagina-servicios .servicio__media {
+    order: -1;
+  }
+}
+
 /* Sitios Turisticos
 Aqui no va nada, se me rompe si pongo estilos. */
 
 .contenedor-sitio {
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-start;
   gap: 20px;
 }
 
+/* La imagen con usemap no se escala (las coords son en px), solo hace scroll */
+.contenedor-imagen {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.contenedor-imagen img {
+  display: block;
+}
+
+.contenedor-imagen img:not([usemap]) {
+  max-width: 100%;
+  height: auto;
+}
+
 .contenedor-texto {
-  max-width: 400px;
+  flex: 1 1 300px;
+  max-width: 70ch;
   line-height: 1.6;
   font-size: 16px;
   text-align: justify;
@@ -150,7 +186,9 @@ Aqui no va nada, se me rompe si pongo estilos. */
 }
 
 .pagina-index header {
-  height: 10vh;
+  min-height: 10vh;
+  padding: 0 2vw;
+  text-align: center;
   background-color: #73cf66;
   display: flex;
   align-items: center;
@@ -206,7 +244,9 @@ Aqui no va nada, se me rompe si pongo estilos. */
 }
 
 .pagina-index footer {
-  height: 5vh;
+  min-height: 5vh;
+  padding: 0 2vw;
+  text-align: center;
   background-color: #a83939;
   display: flex;
   align-items: center;
@@ -215,14 +255,54 @@ Aqui no va nada, se me rompe si pongo estilos. */
 }
 
 @media (max-width: 768px) {
+  .pagina-index {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .pagina-index header {
+    padding: 10px;
+  }
+
+  .pagina-index header h1 {
+    font-size: 1.25rem;
+    line-height: 1.3;
+  }
+
   .pagina-index main {
     flex-direction: column;
     height: auto;
+    gap: 1vh;
   }
 
-  .pagina-index .central,
-  .pagina-index .navegacion {
+  .pagina-index .central {
     width: 100%;
-    height: 50vh;
+    height: 70vh;
+  }
+
+  .pagina-index .navegacion {
+    order: -1;
+    width: 100%;
+    padding: 8px;
+  }
+
+  .pagina-index nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 6px;
+  }
+
+  .pagina-index nav ul li {
+    margin-bottom: 0;
+  }
+
+  .pagina-index nav a {
+    display: block;
+    padding: 6px 10px;
+  }
+
+  .pagina-index footer {
+    padding: 8px;
   }
 }
